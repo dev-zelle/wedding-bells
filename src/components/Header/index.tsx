@@ -19,7 +19,7 @@ const Header = () => {
 								href={item.path}
 								key={item.title}
 								target="_blank"
-								className={`font-oswald text-lg uppercase font-medium border-b pb-2 tracking-widest ${
+								className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${
 									item.active
 										? "border-orange-300 text-orange-300"
 										: "border-transparent text-orange-500"
@@ -33,12 +33,12 @@ const Header = () => {
 					</div>
 				</div>
 				<div className="flex flex-col gap-12 items-center justify-center lg:px-0 px-12">
-					<div className="text-white font-semibold font-windsong lg:text-[128px] text-[45px] lg:leading-[140px] tracking-wide lg:max-w-[50vw] lg:text-left text-center">
-						Kevin & Lovely
+					<div className="text-white font-semibold font-aerotis lg:text-[110px] text-[45px] lg:leading-[140px] tracking-wide lg:max-w-[50vw] lg:text-left text-center">
+						Kevin and Lovely
 					</div>
 					<div>						
-						<Button className="" variant="light">NOVEMBER 28 2024<br />THRUSDAY</Button>
-						<Button className="" variant="dark">SAN PABLO CHRUCH<br />JUNA SUBDIVISION</Button>
+						<Button className="text-[10px]" variant="light">NOVEMBER 28 2024<br />THURSDAY</Button>
+						<Button className="text-[10px]" variant="dark">SAN PABLO CHURCH<br />JUNA SUBDIVISION</Button>
 					</div>
 				</div>
 			</div>

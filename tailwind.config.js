@@ -7,6 +7,8 @@ export default {
 				sans: ["Open Sans", "sans-serif"],
 				oswald: ["Oswald", "sans-serif"],
 		        windsong: ["WindSong", "WindSong"],
+				aerotis: ["AEROTIS", "AEROTIS"],
+				hasweny: ["HASWENY", "HASWENY"],
 			},
 			colors: {
         		primary: "#000000",

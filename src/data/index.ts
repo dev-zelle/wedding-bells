@@ -55,8 +55,8 @@ export const companies = [
 ];
 
 export const team = [
-	{ name: "Kevin Chan", role: "Groom", image: t1 },
-	{ name: "Lovely Clapis", role: "Bride", image: t2 },
+	{ name: "Kevin Carl L. Chan", role: "Groom", image: t1 },
+	{ name: "Lovely Liana S. Clapis", role: "Bride", image: t2 },
 ];
 
 export const commentsArray = [

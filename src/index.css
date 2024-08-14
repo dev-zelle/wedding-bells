@@ -15,6 +15,15 @@ body {
 	overflow-x: hidden;
 }
 
+@font-face {
+	font-family: "AEROTIS";
+	src: url("./fonts/AEROTIS.TTF");
+}
+@font-face {
+	font-family: "HASWENY";
+	src: url("./fonts/HASWENY.OTF");
+}
+
 ::-webkit-scrollbar {
 	width: 9px;
 	height: 9px;
