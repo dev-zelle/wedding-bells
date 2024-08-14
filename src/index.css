@@ -17,11 +17,11 @@ body {
 
 @font-face {
 	font-family: "AEROTIS";
-	src: url("./fonts/AEROTIS.TTF");
+	src: url("../public/fonts/AEROTIS.TTF")
 }
 @font-face {
 	font-family: "HASWENY";
-	src: url("./fonts/HASWENY.OTF");
+	src: url("../public/fonts/HASWENY.OTF");
 }
 
 ::-webkit-scrollbar {

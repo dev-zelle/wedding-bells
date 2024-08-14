@@ -36,9 +36,9 @@ const Header = () => {
 					<div className="text-white font-semibold font-aerotis lg:text-[110px] text-[45px] lg:leading-[140px] tracking-wide lg:max-w-[50vw] lg:text-left text-center">
 						Kevin and Lovely
 					</div>
-					<div>						
-						<Button className="text-[10px]" variant="light">NOVEMBER 28 2024<br />THURSDAY</Button>
-						<Button className="text-[10px]" variant="dark">SAN PABLO CHURCH<br />JUNA SUBDIVISION</Button>
+					<div className="">						
+						<Button className="text-[10px] lg:text-[15px]" variant="light">NOVEMBER 28 2024<br />THURSDAY</Button>
+						<Button className="text-[10px] lg:text-[15px]" variant="dark">SAN PABLO CHURCH<br />JUNA SUBDIVISION</Button>
 					</div>
 				</div>
 			</div>
