@@ -18,6 +18,7 @@ import b3 from "../assets/images/b3.png";
 export const navItems = [
 	{ title: "Home", path: "/", active: true },
 	{ title: "Our Story", path: "/", active: false },
+	{ title: "Couple", path: "/", active: false },
 	{ title: "Dress Code", path: "/", active: false },
 	{ title: "RSVP", path: "/", active: false },
 ];
