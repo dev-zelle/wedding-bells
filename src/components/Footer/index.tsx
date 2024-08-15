@@ -1,10 +1,6 @@
 //import logo from "../../assets/images/logoBlack.svg";
 import {
-	LogoBehance,
 	LogoFacebook,
-	LogoInstagram,
-	LogoLinkedin,
-	LogoTwitter,
 } from "react-ionicons";
 
 const Footer = () => {
