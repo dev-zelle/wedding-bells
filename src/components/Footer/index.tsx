@@ -14,7 +14,7 @@ const Footer = () => {
 						target="_blank"
 						className="text-secondary"
 					>
-						Cousins!
+						NH Company
 					</a>
 				</span>
                 <p>Congrats Kevin and Lovely!</p>

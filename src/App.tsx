@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import OurStory from "./components/OurStory";
+//import OurStory from "./components/OurStory";
 import Couples from "./components/Couples";
 import Footer from "./components/Footer";
 
@@ -9,7 +9,7 @@ const App = () => {
   <div className="w-full flex flex-col">
     <Navbar />
     <Header />
-    <OurStory />
+    {/*<OurStory />*/}
     <Couples />
     <Footer />
   </div>
