@@ -11,7 +11,7 @@ const Navbar = () => {
                         <a
                             href={item.path}
                             key={item.title}
-                            target="_blank"
+                            
                             className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${
                                 item.active
                                     ? "border-[#b2a397] text-[#b2a397]"
