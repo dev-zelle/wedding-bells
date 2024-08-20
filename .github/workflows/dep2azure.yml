@@ -49,7 +49,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: 8a2b80e52658cdbede019ef27689510919208f6b175778c66af5cc17539735af5-9fb9ac2d-1a42-4239-9a40-49796660249c000270000
           action: "upload" # Make sure this is provided
-          app_location: "." # Change if your app is in a subdirectory
-          output_location: "./dist" # The location of the built files
+          app_location: "" # Change if your app is in a subdirectory
+          output_location: "dist" # The location of the built files
           skip_app_build: true
  
