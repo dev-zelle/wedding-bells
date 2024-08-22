@@ -28,6 +28,10 @@ const Timer = () => {
         return() =>clearInterval(interval)
     }, []);
 
+    function callTimer(param:number) {
+        return(param === 0 ? "00" : param)
+    }
+
     return (
         <section className="bg-[#dad5d1] bg-opacity-50 rounded-lg">
             <section className="timer">
@@ -38,22 +42,22 @@ const Timer = () => {
                 </div>
                 <div className=''>
                     <section>
-                        <p>{days}</p>
+                        <p>{callTimer(days)}</p>
                         <p><small>Days</small></p>
                     </section>
                     <span>:</span>
                     <section>
-                        <p>{hours}</p>
+                        <p>{callTimer(hours)}</p>
                         <p><small>Hours</small></p>
                     </section>
                     <span>:</span>
                     <section>
-                        <p>{minutes}</p>
+                        <p>{callTimer(minutes)}</p>
                         <p><small>Minutes</small></p>
                     </section>
                     <span>:</span>
                     <section>
-                        <p>{seconds}</p>
+                        <p>{callTimer(seconds)}</p>
                         <p><small>Seconds</small></p>
                     </section>
                 </div>
