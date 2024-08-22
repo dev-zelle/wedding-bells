@@ -1,46 +1,32 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './index.css';
 
 const Timer = () => {
-    const [timerDays, setTimerDays] = useState('00');
-    const [timerHours, setTimerHours] = useState('00');
-    const [timerMinutes, setTimerMinutes] = useState('00');
-    const [timerSeconds, setTimerSeconds] = useState('00');
-
-    let interval = useRef();
-
-    const stateTimer = () => {
-        const countdownDate = new Date('November 28, 2024 15:30:00').getTime();
-
-        interval = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            if (distance < 0){
-                // stop our timer
-                clearInterval(interval.current);
-            } else {
-                // update timer
-                setTimerDays(days);
-                setTimerHours(hours);
-                setTimerMinutes(minutes);
-                setTimerSeconds(seconds);
-            }
-        }, 1000);
-    };
-
-    // componentDidMount
+    const [days, setDays] = useState(0);
+    const [hours, setHours] = useState(0);
+    const [minutes, setMinutes] = useState(0);
+    const [seconds, setSeconds] = useState(0);
+    
     useEffect(() => {
-        stateTimer();
-        return() => {
-            clearInterval(interval.current);
-        };
-    });
+        const target= new Date('November 28, 2024 15:30:00');
+        
+        const interval = setInterval(() => {
+            const now = new Date();
+            const difference = target.getTime() - now.getTime()
+
+            const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const h = Math.floor((difference % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
+            const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+            setDays(d);
+            setHours(h);
+            setMinutes(m);
+            setSeconds(s);
+        }, 1000)
+
+        return() =>clearInterval(interval)
+    }, []);
 
     return (
         <section className="bg-[#dad5d1] bg-opacity-50 rounded-lg">
@@ -52,22 +38,22 @@ const Timer = () => {
                 </div>
                 <div className=''>
                     <section>
-                        <p>{timerDays}</p>
+                        <p>{days}</p>
                         <p><small>Days</small></p>
                     </section>
                     <span>:</span>
                     <section>
-                        <p>{timerHours}</p>
+                        <p>{hours}</p>
                         <p><small>Hours</small></p>
                     </section>
                     <span>:</span>
                     <section>
-                        <p>{timerMinutes}</p>
+                        <p>{minutes}</p>
                         <p><small>Minutes</small></p>
                     </section>
                     <span>:</span>
                     <section>
-                        <p>{timerSeconds}</p>
+                        <p>{seconds}</p>
                         <p><small>Seconds</small></p>
                     </section>
                 </div>
