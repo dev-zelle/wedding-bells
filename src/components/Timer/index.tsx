@@ -33,14 +33,13 @@ const Timer = () => {
     }
 
     return (
-        <section className="bg-[#dad5d1] bg-opacity-50 rounded-lg">
+        <section className="">
             <section className="timer">
                 <div>
-                    <span className="mdi mdi-calendar-clock timer-icon"></span>
-                    <h2 className=''>November 28, 2024 Thursday</h2>
-                    <p className=''>Countdown to a really special date. One you could or would never imagine!</p>                    
+                    <h2 className=''></h2>
+                    <p className=''></p>                    
                 </div>
-                <div className=''>
+                <div className='bg-[#dad5d1] bg-opacity-50 rounded-lg'>
                     <section>
                         <p>{callTimer(days)}</p>
                         <p><small>Days</small></p>

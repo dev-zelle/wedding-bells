@@ -9,6 +9,7 @@ export default {
 		        windsong: ["WindSong", "WindSong"],
 				aerotis: ["AEROTIS", "AEROTIS"],
 				hasweny: ["HASWENY", "HASWENY"],
+				beaurivage: ["Beau Rivage", "Beau Rivage"],
 			},
 			colors: {
         		primary: "#000000",

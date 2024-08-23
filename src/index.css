@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Poppins:wght@600&family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -32,8 +33,8 @@ body {
 	background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-	background: #ff9e0d !important;
+	background: #b2a397 !important;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: #dd890b !important;
+	background: #dad5d1 !important;
 }
