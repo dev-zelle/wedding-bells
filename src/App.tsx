@@ -7,10 +7,14 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
   <div className="w-full flex flex-col">
-    <Navbar />
-    <Header />
+    <div id="#home">
+      <Navbar />
+      <Header />
+    </div>
     {/*<OurStory />*/}
-    <Couples />
+    <section id="#couple">
+      <Couples />
+    </section>
     <Footer />
   </div>
   )

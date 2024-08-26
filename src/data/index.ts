@@ -16,8 +16,8 @@ import b2 from "../assets/images/b2.png";
 import b3 from "../assets/images/b3.png";
 
 export const navItems = [
-	{ title: "Home", path: "/", active: true },
-	{ title: "Couple", path: "/", active: false },
+	{ title: "Home", path: "#home", active: true },
+	{ title: "Couple", path: "#couple", active: false },
 	{ title: "Venue", path: "/", active: false },
 	{ title: "Dress Code", path: "/", active: false },
 	{ title: "RSVP", path: "/", active: false },
