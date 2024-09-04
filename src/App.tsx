@@ -2,8 +2,9 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 //import OurStory from "./components/OurStory";
 import Couples from "./components/Couples";
-import Footer from "./components/Footer";
 import Venue from "./components/Venue";
+import Attire from "./components/Attire";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
     {/*<OurStory />*/}
     <Couples />
     <Venue />
+    <Attire />
     <Footer />
   </div>
   )

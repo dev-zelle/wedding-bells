@@ -1,9 +1,11 @@
 import { articles } from "../../data";
 import Titlebar from "../Titlebar";
+import Button from "../Button";
+import { LocationOutline } from 'react-ionicons';
 
 const Venue = () => {
 	return (
-		<div className="w-full lg:mt-40 mt-20 flex flex-col items-start justify-center gap-14 lg:px-[310px] px-5">
+		<div className="w-full lg:mt-40 mt-40 flex flex-col items-start justify-center gap-14 lg:px-[310px] px-5 py-20 bg-[#dad5d1] bg-opacity-50 ">
 			<div className="flex flex-col gap-4">
 				<Titlebar title="Venue" />
 				<span className="uppercase text-secondary font-oswald font-bold text-[45px]">
@@ -12,15 +14,12 @@ const Venue = () => {
 			</div>
 			<div className="flex w-full lg:flex-row flex-col items-center gap-5 justify-between">
 				{articles.map((item) => (
-					<div
-						key={item.title}
-						className="flex w-full flex-col justify-end p-6 gap-4 bg-cover bg-center h-[370px]"
-						style={{ backgroundImage: `url(${item.image})` }}
-					>
-						<p className="font-sans text-lg text-articleDate italic">{item.date}</p>
-						<span className="text-white font-medium font-oswald text-[32px] tracking-wide leading-[40px] uppercase">
+					<div key={item.title} className="flex w-full flex-col justify-end p-6 gap-4">
+						<span className="text-black font-medium font-oswald text-[32px] tracking-wide leading-[40px] uppercase">
 							{item.title}
 						</span>
+						<p className="font-sans text-lg text-black italic">{item.date}</p>
+						<Button variant="light" className="!h-[54px] mt-5 flex items-center text-center"><LocationOutline color={'#ffffff'} />&nbsp; {item.text}</Button>
 					</div>
 				))}
 			</div>

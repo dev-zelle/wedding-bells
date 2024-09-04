@@ -1,7 +1,7 @@
 import { team } from "../../data";
 import Titlebar from "../Titlebar";
 
-const Team = () => {
+const Couples = () => {
 	return (
 		<div className="w-full lg:mt-20 lg:mb-10 mt-10 mb-5 justify-center items-center lg:px-[310px] px-5 flex flex-col gap-14">
 			<div className="flex flex-col gap-4">
@@ -33,4 +33,4 @@ const Team = () => {
 	);
 };
 
-export default Team;
+export default Couples;

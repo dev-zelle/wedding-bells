@@ -1,7 +1,6 @@
 import bg from "../../assets/images/bg.jpg";
 import Button from "../Button";
 
-//import Button from "../Button";
 import Timer from "../Timer";
 
 const Header = () => {

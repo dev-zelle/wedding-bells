@@ -13,6 +13,7 @@ import t1 from "../assets/images/t1.jpg";
 import t2 from "../assets/images/t2.jpg";
 import b1 from "../assets/images/b1.jpg";
 import b2 from "../assets/images/b2.jpg";
+import a1 from "../assets/images/a1.png";
 
 export const navItems = [
 	{ title: "Home", path: "#home", active: true },
@@ -59,6 +60,10 @@ export const team = [
 	{ name: "Lovely Liana S. Clapis", role: "Bride", image: t2 },
 ];
 
+export const attire = [
+	{ image: a1 }
+];
+
 export const commentsArray = [
 	{
 		body: "“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”",
@@ -83,13 +88,15 @@ export const results = [
 
 export const articles = [
 	{
-		date: "2:00PM",
-		title: "San Pablo Church",
+		date: "Juna Subdivision 8021 Davao City Davao Region",
+		title: "3:30PM, San Pablo Church",
 		image: b1,
+		text: " Church"
 	},
 	{
-		date: "6:00PM",
-		title: "Arcadia Building",
+		date: "Col. Emilio Escandor St., Davao Gulf Drive, Ecoland Dr., Talomo 8000 Davao City Davao Region",
+		title: "6:00PM, Arcadia Building",
 		image: b2,
+		text: " Reception"
 	},
 ];
