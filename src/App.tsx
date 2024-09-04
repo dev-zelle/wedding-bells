@@ -3,18 +3,16 @@ import Header from "./components/Header";
 //import OurStory from "./components/OurStory";
 import Couples from "./components/Couples";
 import Footer from "./components/Footer";
+import Venue from "./components/Venue";
 
 const App = () => {
   return (
   <div className="w-full flex flex-col">
-    <div id="#home">
-      <Navbar />
-      <Header />
-    </div>
+    <Navbar />
+    <Header />
     {/*<OurStory />*/}
-    <section id="#couple">
-      <Couples />
-    </section>
+    <Couples />
+    <Venue />
     <Footer />
   </div>
   )

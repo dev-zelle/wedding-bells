@@ -36,7 +36,7 @@ const Timer = () => {
         <section className="">
             <section className="timer">
                 <div>
-                    <h2 className=''>November 28, 2024 Thursday</h2>
+                    <h2 className=''></h2>
                     <p className=''></p>                    
                 </div>
                 <div className='bg-[#dad5d1] bg-opacity-50 rounded-lg'>

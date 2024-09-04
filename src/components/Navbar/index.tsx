@@ -1,3 +1,4 @@
+import logo from "../../assets/images/logo.svg";
 import { navItems } from "../../data";
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -8,6 +9,10 @@ const Navbar = () => {
                 <div></div>
                 {/*<img src={logo} alt="logo" />*/}
                 <div className="hidden lg:flex items-center gap-10">
+				<img className="h-10 w-30"
+					src={logo}
+					alt="logo"
+				/>
                     {navItems.map((item, index) => (
                         <nav>
                             <Link key={index} className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${

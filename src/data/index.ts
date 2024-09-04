@@ -11,9 +11,8 @@ import c7 from "../assets/images/c7.png";
 import c8 from "../assets/images/c8.png";
 import t1 from "../assets/images/t1.jpg";
 import t2 from "../assets/images/t2.jpg";
-import b1 from "../assets/images/b1.png";
-import b2 from "../assets/images/b2.png";
-import b3 from "../assets/images/b3.png";
+import b1 from "../assets/images/b1.jpg";
+import b2 from "../assets/images/b2.jpg";
 
 export const navItems = [
 	{ title: "Home", path: "#home", active: true },
@@ -84,18 +83,13 @@ export const results = [
 
 export const articles = [
 	{
-		date: "Feb 1, 2022  /  Buildings",
-		title: "Top 10 mindblowing architecture buildings in the world",
+		date: "2:00PM",
+		title: "San Pablo Church",
 		image: b1,
 	},
 	{
-		date: "Feb 2, 2022  /  Construction",
-		title: "Amazing technologies that helped to create creatives works",
+		date: "6:00PM",
+		title: "Arcadia Building",
 		image: b2,
-	},
-	{
-		date: "Feb 3, 2022  /  Company",
-		title: "100 best construction company around the world",
-		image: b3,
 	},
 ];
