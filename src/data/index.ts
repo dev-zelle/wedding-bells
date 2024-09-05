@@ -91,12 +91,14 @@ export const articles = [
 		date: "Juna Subdivision 8021 Davao City Davao Region",
 		title: "3:30PM, San Pablo Church",
 		image: b1,
-		text: " Church"
+		text: " Church",
+		url: "https://maps.app.goo.gl/3bDKdo7rEyVtdsQH7"
 	},
 	{
 		date: "Col. Emilio Escandor St., Davao Gulf Drive, Ecoland Dr., Talomo 8000 Davao City Davao Region",
 		title: "6:00PM, Arcadia Building",
 		image: b2,
-		text: " Reception"
+		text: " Reception",
+		url: "https://maps.app.goo.gl/RwkgD9QhHwuCvTf76"
 	},
 ];

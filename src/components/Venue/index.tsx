@@ -1,9 +1,12 @@
 import { articles } from "../../data";
 import Titlebar from "../Titlebar";
-import Button from "../Button";
 import { LocationOutline } from 'react-ionicons';
 
-const Venue = () => {
+const Venue = () => {	
+	const navigate = (url: string) =>{
+		window.open(url);
+    }
+
 	return (
 		<div className="w-full lg:mt-40 mt-40 flex flex-col items-start justify-center gap-14 lg:px-[310px] px-5 py-20 bg-[#dad5d1] bg-opacity-50 ">
 			<div className="flex flex-col gap-4">
@@ -19,7 +22,8 @@ const Venue = () => {
 							{item.title}
 						</span>
 						<p className="font-sans text-lg text-black italic">{item.date}</p>
-						<Button variant="light" className="!h-[54px] mt-5 flex items-center text-center"><LocationOutline color={'#ffffff'} />&nbsp; {item.text}</Button>
+						<button className="bg-[#b2a397] text-white w-fit mt-5 flex items-center text-center px-10 h-[54px] rounded-full border-primary font-oswald font-medium uppercase tracking-wider" 
+						onClick={()=>navigate(item.url)}><LocationOutline color={'#ffffff'} />&nbsp; {item.text}</button>
 					</div>
 				))}
 			</div>

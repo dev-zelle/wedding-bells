@@ -5,6 +5,7 @@ import Couples from "./components/Couples";
 import Venue from "./components/Venue";
 import Attire from "./components/Attire";
 import Footer from "./components/Footer";
+import RSVP from "./components/RSVP";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
     <Couples />
     <Venue />
     <Attire />
+    <RSVP />
     <Footer />
   </div>
   )
