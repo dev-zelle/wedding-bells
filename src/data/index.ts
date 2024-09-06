@@ -15,12 +15,13 @@ import b1 from "../assets/images/b1.jpg";
 import b2 from "../assets/images/b2.jpg";
 import a1 from "../assets/images/a1.png";
 
+
 export const navItems = [
-	{ id:0, title: "Home", path: "#home", active: true },
-	{ id:1, title: "Couple", path: "#couple", active: false },
-	{ id:2, title: "Venue", path: "/", active: false },
-	{ id:3, title: "Dress Code", path: "/", active: false },
-	{ id:4, title: "RSVP", path: "/", active: false },
+	{ id:0, title: "Home", path: "#home" },
+	{ id:1, title: "Couple", path: "#couple" },
+	{ id:2, title: "Venue", path: "#venue" },
+	{ id:3, title: "Dress Code", path: "#dress-code" },
+	{ id:4, title: "RSVP", path: "#rsvp" },
 ];
 
 export const projectCats = [

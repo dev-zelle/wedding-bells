@@ -7,6 +7,7 @@ import Timer from "../Timer";
 const Header = () => {
     return (
         <div 
+			id="home"
             className="w-full flex items-center justify-center relative h-screen bg-cover bg-center"
             style={{backgroundImage: `url(${bg})`}}
             >

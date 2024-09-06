@@ -3,7 +3,10 @@ import Titlebar from "../Titlebar";
 
 const Couples = () => {
 	return (
-		<div className="w-full lg:mt-20 lg:mb-10 mt-10 mb-5 justify-center items-center lg:px-[310px] px-5 flex flex-col gap-14">
+		<div 
+			id="couple"
+			className="w-full lg:pt-20 lg:pb-10 pt-10 pb-5 justify-center items-center lg:px-[310px] px-5 flex flex-col gap-14"
+		>
 			<div className="flex flex-col gap-4">
 				<Titlebar title="Meet our couple" />
 				<span className="uppercase text-secondary font-oswald font-bold text-[45px]">
