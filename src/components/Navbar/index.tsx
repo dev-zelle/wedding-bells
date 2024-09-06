@@ -13,13 +13,13 @@ const Navbar = () => {
 					src={logo}
 					alt="logo"
 				/>
-                    {navItems.map((item, index) => (
-                        <nav>
-                            <Link key={index} className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${
+                    {navItems.map((item) => (
+                        <nav key={item.id}>
+                            <Link smooth to={item.path} className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${
                                 item.active
                                     ? "border-[#b2a397] text-[#b2a397]"
                                     : "border-transparent text-[#b2a397]"
-                            }`} to={item.path}>{item.title}</Link>
+                            }`}>{item.title}</Link>
                         </nav>
                     ))}
                 </div>

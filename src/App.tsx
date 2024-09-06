@@ -13,7 +13,7 @@ const App = () => {
     <Navbar />
     <Header />
     {/*<OurStory />*/}
-    <Couples />
+    <section id="couples"><Couples /></section>
     <Venue />
     <Attire />
     <RSVP />

@@ -16,11 +16,11 @@ import b2 from "../assets/images/b2.jpg";
 import a1 from "../assets/images/a1.png";
 
 export const navItems = [
-	{ title: "Home", path: "#home", active: true },
-	{ title: "Couple", path: "#couple", active: false },
-	{ title: "Venue", path: "/", active: false },
-	{ title: "Dress Code", path: "/", active: false },
-	{ title: "RSVP", path: "/", active: false },
+	{ id:0, title: "Home", path: "#home", active: true },
+	{ id:1, title: "Couple", path: "#couple", active: false },
+	{ id:2, title: "Venue", path: "/", active: false },
+	{ id:3, title: "Dress Code", path: "/", active: false },
+	{ id:4, title: "RSVP", path: "/", active: false },
 ];
 
 export const projectCats = [

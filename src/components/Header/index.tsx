@@ -17,7 +17,7 @@ const Header = () => {
 					</div>
 					<div className="text-center pt-10 flex flex-col justify-center items-center font-sans">
 						<p className='text-[20px]'>November 28, 2024 Thursday</p>						
-						<p className="pt-5">"Together is a wonderful place to be."</p>
+						{/*<p className="pt-5">"Together is a wonderful place to be."</p>*/}
 					</div>
 
 					<Timer />
