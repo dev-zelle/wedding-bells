@@ -2,13 +2,16 @@ import { articles } from "../../data";
 import Titlebar from "../Titlebar";
 import { LocationOutline } from 'react-ionicons';
 
-const Venue = () => {	
+const Venue = () => {
 	const navigate = (url: string) =>{
 		window.open(url);
     }
 
 	return (
-		<div className="w-full lg:mt-40 mt-40 flex flex-col items-start justify-center gap-14 lg:px-[310px] px-5 py-20 bg-[#dad5d1] bg-opacity-50 ">
+		<div
+			id="venue"
+			className="w-full lg:mt-40 mt-40 flex flex-col items-start justify-center gap-14 lg:px-[310px] px-5 py-20 bg-[#dad5d1] bg-opacity-50 "
+		>
 			<div className="flex flex-col gap-4">
 				<Titlebar title="Venue" />
 				<span className="uppercase text-secondary font-oswald font-bold text-[45px]">
