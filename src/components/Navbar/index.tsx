@@ -12,7 +12,7 @@ const Navbar = () => {
 
     const scrollWithOffset = (el: HTMLElement) => {
         const yOffset = -60;
-        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
     };
 

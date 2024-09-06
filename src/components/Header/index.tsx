@@ -22,7 +22,7 @@ const Header = () => {
 					</div>
 
 					<Timer />
-					<Button variant="light" className="font-sans">Click Here for RSVP</Button>
+					<Button variant="light" className="font-sans"><a href='#rsvp'>Click Here for RSVP</a></Button>
 					{/*<div className="">						
 						<Button className="text-[10px] lg:text-[15px]" variant="light">NOVEMBER 28 2024<br />THURSDAY</Button>
 						<Button className="text-[10px] lg:text-[15px]" variant="dark">SAN PABLO CHURCH<br />JUNA SUBDIVISION</Button>
