@@ -1,7 +1,7 @@
-import bg from "../../assets/images/bg.jpg";
-import Button from "../Button";
+import { HashLink as Link } from "react-router-hash-link";
 
-//import Button from "../Button";
+import bg from "../../assets/images/bg.jpg";
+import scroll from "../scroll";
 import Timer from "../Timer";
 
 const Header = () => {
@@ -17,16 +17,14 @@ const Header = () => {
 						<p className="drop-shadow-2xl">Kevin and Lovely</p>
 					</div>
 					<div className="text-center pt-10 flex flex-col justify-center items-center font-sans">
-						<p className='text-[20px]'>November 28, 2024 Thursday</p>						
-						{/*<p className="pt-5">"Together is a wonderful place to be."</p>*/}
+						<p className='text-[20px]'>November 28, 2024 Thursday</p>			
 					</div>
-
 					<Timer />
-					<Button variant="light" className="font-sans"><a href='#rsvp'>Click Here for RSVP</a></Button>
-					{/*<div className="">						
-						<Button className="text-[10px] lg:text-[15px]" variant="light">NOVEMBER 28 2024<br />THURSDAY</Button>
-						<Button className="text-[10px] lg:text-[15px]" variant="dark">SAN PABLO CHURCH<br />JUNA SUBDIVISION</Button>
-					</div>*/}
+					<div className="pt-10">
+						<Link to="#rsvp" scroll={scroll} className="px-10 py-4 items-center text-white no-underline bg-[#b2a397] rounded-full hover:bg-[#b2a397] font-oswald font-medium uppercase tracking-wider">
+							Click Here for RSVP
+						</Link>
+					</div>
 				</div>
 			</div>
         </div>

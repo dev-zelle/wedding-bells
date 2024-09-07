@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo.svg";
 import { navItems } from "../../data";
 import { HashLink as Link } from "react-router-hash-link";
 import { useEffect, useState } from "react";
+import scroll from "../scroll";
 
 const Navbar = () => {
     const location = useLocation();
@@ -15,11 +16,11 @@ const Navbar = () => {
 		setIsMenuOpen(!isMenuOpen);
 	};
 
-    const scrollWithOffset = (el: HTMLElement) => {
+    /*const scrollWithOffset = (el: HTMLElement) => {
         const yOffset = -60;
         const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
-    };
+    };*/
 
     /**
      * Observes which section is in view to set as active path
@@ -61,8 +62,7 @@ const Navbar = () => {
 
 	return (
 		<div className="w-full flex bg-gray2 h-[60px] fixed top-0 left-0 right-0 shadow-md z-50">
-			<div className="absolute top-3 px-6 w-full flex items-center justify-center gap-10">
-				{/*<img src={logo} alt="logo" />*/}
+			<div className="absolute top-3 px-6 w-full flex items-center justify-center gap-10">				
 				<div className="flex items-center justify-between w-full lg:w-auto">
 					<img className="h-10 w-30" src={logo} alt="logo" />
 
@@ -94,7 +94,7 @@ const Navbar = () => {
 						<nav key={item.id}>
 							<Link
 								to={item.path}
-								scroll={scrollWithOffset}
+								scroll={scroll}
 								className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${
 									activeSection === item.path
 										? "border-[#b2a397] text-[#b2a397]"
@@ -117,7 +117,7 @@ const Navbar = () => {
 						<nav key={item.id} className="w-full text-center p-4">
 							<Link
 								to={item.path}
-								scroll={scrollWithOffset}
+								scroll={scroll}
 								onClick={() => setIsMenuOpen(false)} // Close menu on click
 								className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${
 									activeSection === item.path
@@ -136,16 +136,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-                        {/*<a
-                            href={item.path}
-                            key={item.title}
-                            
-                            className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${
-                                item.active
-                                    ? "border-[#b2a397] text-[#b2a397]"
-                                    : "border-transparent text-[#b2a397]"
-                            }`}
-                        >
-                            {item.title}
-                        </a>*/}
