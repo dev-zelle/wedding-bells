@@ -10,7 +10,8 @@ body {
 
 .timer {
     /*background-color: rgba(0,0,0,0.5);*/
-    display: flex-direction;
+    display: flex;
+    flex-direction: column;
     flex: column;
     align-items: center;
     justify-content: center;
@@ -37,9 +38,9 @@ h2 {
     border: 1px solid #fff;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    margin: 3em;
     padding: 3em;
     text-align: center;
+    width: 85%;
 }
 
 section p:first-child, .timer div:last-child span {
@@ -48,8 +49,7 @@ section p:first-child, .timer div:last-child span {
 
 @media screen and (max-width: 350px) {
     .timer div:last-child{
-        margin-left: 2em;
-        margin-right: 2em;
         padding: 3em 1em;
+        width: 95%;
     }
 }

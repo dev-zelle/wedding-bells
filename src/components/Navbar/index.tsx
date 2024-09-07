@@ -9,10 +9,15 @@ const Navbar = () => {
     const navigate = useNavigate();
     const sections = navItems.map(i => i.path.replace('#', ''));
     const [activeSection, setActiveSection] = useState<string>('');
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
 
     const scrollWithOffset = (el: HTMLElement) => {
         const yOffset = -60;
-        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
     };
 
@@ -55,31 +60,76 @@ const Navbar = () => {
     }, [sections, navigate, location.hash]);
 
 	return (
-		<div className="w-full flex bg-gray2 lg:h-[60px] fixed top-0 left-0 right-0 shadow-md z-50">
-			<div className="absolute top-3 px-12 w-full flex items-center justify-between">
-				<div></div>
+		<div className="w-full flex bg-gray2 h-[60px] fixed top-0 left-0 right-0 shadow-md z-50">
+			<div className="absolute top-3 px-6 w-full flex items-center justify-center gap-10">
 				{/*<img src={logo} alt="logo" />*/}
-				<div className="hidden lg:flex items-center gap-10">
-				<img className="h-10 w-30"
-					src={logo}
-					alt="logo"
-				/>
-                    {navItems.map((item) => (
-                        <nav key={item.id}>
-                            <Link
-                                to={item.path}
-                                scroll={scrollWithOffset}
-                                className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${
-                                    activeSection === item.path
-                                        ? "border-[#b2a397] text-[#b2a397]"
-                                        : "border-transparent text-[#b2a397]"
-                                }`}
-                            >{item.title}</Link>
-                        </nav>
-                    ))}
+				<div className="flex items-center justify-between w-full lg:w-auto">
+					<img className="h-10 w-30" src={logo} alt="logo" />
+
+					{/* Hamburger Icon */}
+					<button
+						className="lg:hidden block focus:outline-none"
+						onClick={toggleMenu}
+					>
+						<svg
+							className="w-8 h-8 text-[#b2a397]"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="2"
+								d="M4 6h16M4 12h16m-7 6h7"
+							></path>
+						</svg>
+					</button>
 				</div>
-                <div className="hidden lg:flex items-center gap-6">
-                </div>
+
+				{/* Desktop Links */}
+				<div className="hidden lg:flex items-center gap-10">
+					{navItems.map((item) => (
+						<nav key={item.id}>
+							<Link
+								to={item.path}
+								scroll={scrollWithOffset}
+								className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${
+									activeSection === item.path
+										? "border-[#b2a397] text-[#b2a397]"
+										: "border-transparent text-[#b2a397]"
+								}`}
+							>
+								{item.title}
+							</Link>
+						</nav>
+					))}
+				</div>
+
+				{/* Mobile Dropdown Menu */}
+				<div
+					className={`${
+						isMenuOpen ? "max-h-96" : "max-h-0"
+					} lg:hidden absolute top-full left-0 right-0 bg-gray2 shadow-lg flex-col items-center overflow-hidden transition-all duration-300 ease-in-out`}
+				>
+					{navItems.map((item) => (
+						<nav key={item.id} className="w-full text-center p-4">
+							<Link
+								to={item.path}
+								scroll={scrollWithOffset}
+								onClick={() => setIsMenuOpen(false)} // Close menu on click
+								className={`font-hasweny text-lg uppercase font-medium border-b pb-2 tracking-widest ${
+									activeSection === item.path
+										? "border-[#b2a397] text-[#b2a397]"
+										: "border-transparent text-[#b2a397]"
+								}`}
+							>
+								{item.title}
+							</Link>
+						</nav>
+					))}
+				</div>
 			</div>
 		</div>
 	);
