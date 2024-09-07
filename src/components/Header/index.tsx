@@ -12,7 +12,7 @@ const Header = () => {
             style={{backgroundImage: `url(${bg})`}}
             >
 			<div className="w-full h-full flex flex-col justify-center items-center bg-black/50">
-				<div className="text-[#f6e9d8] flex flex-col items-center justify-center lg:px-0 px-12">
+				<div className="text-[#f6e9d8] flex flex-col items-center justify-center lg:px-0">
 					<div className="font-semibold font-aerotis lg:text-[110px] text-[45px] lg:leading-[140px] tracking-wide lg:max-w-[50vw] lg:text-left text-center">
 						<p className="drop-shadow-2xl">Kevin and Lovely</p>
 					</div>
