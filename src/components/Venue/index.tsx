@@ -5,7 +5,7 @@ import navigate from "../navigate";
 
 const Venue = () => {
 	return (
-		<div id="venue" className="w-full lg:mt-40 mt-40 flex flex-col items-start justify-center gap-14 lg:px-[310px] px-5 py-20 bg-[#dad5d1] bg-opacity-50">
+		<div id="venue" className="w-full lg:mt-20 mt-20 flex flex-col items-start justify-center gap-14 lg:px-[310px] px-5 py-10 bg-[#dad5d1] bg-opacity-50">
 			<div className="flex flex-col gap-4">
 				<Titlebar title="Venue" />
 				<span className="uppercase text-secondary font-oswald font-bold text-[45px]">
