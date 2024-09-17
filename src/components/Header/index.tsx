@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <div 
 			id="home"
-            className="w-full flex items-center justify-center relative h-screen bg-cover bg-center"
+            className="w-full flex items-center justify-center relative h-screen bg-cover bg-right"
             style={{backgroundImage: `url(${bg})`}}
             >
 			<div className="w-full h-full flex flex-col justify-center items-center bg-black/50">
