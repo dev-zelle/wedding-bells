@@ -1,11 +1,11 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 .timer {
@@ -22,34 +22,34 @@ body {
 }
 
 .timer div:first-child{
-    text-align: center;
+  text-align: center;
 }
 
 h2 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .timer div:first-child p {
-    color: #f8f8f8;
-    margin: 3em;
+  color: #f8f8f8;
+  margin: 3em;
 }
 
 .timer div:last-child{
-    border: 1px solid #fff;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    padding: 3em;
-    text-align: center;
-    width: 85%;
+  border: 1px solid #fff;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 3em 1em;
+  text-align: center;
+  width: 85%;
 }
 
 section p:first-child, .timer div:last-child span {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 @media screen and (max-width: 350px) {
-    .timer div:last-child{
-        padding: 3em 1em;
-        width: 95%;
-    }
+  .timer div:last-child{
+    padding: 3em 1em;
+    width: 95%;
+  }
 }
