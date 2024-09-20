@@ -2,6 +2,8 @@ import { useState, useEffect, useCallback } from "react";
 import Titlebar from "../Titlebar";
 import { entourage } from "../../data";
 
+import { ArrowBack, ArrowForward } from 'react-ionicons';
+
 const offset = 5;
 const slideWidth = 400;
 const transitionDuration = 300;
@@ -166,11 +168,11 @@ const Carousel = () => {
 			<button
 				className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full hover:bg-opacity-75 text-2xl p-3"
 				onClick={prevSlide}
-			>◀</button>
+			><ArrowBack color="white" /></button>
 			<button
 				className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full hover:bg-opacity-75 text-2xl p-3"
 				onClick={nextSlide}
-			>▶</button>
+			><ArrowForward color="white" /></button>
 			</div>
 		</div>
 	);
