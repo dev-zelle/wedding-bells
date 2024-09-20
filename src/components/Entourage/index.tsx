@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import Titlebar from "../Titlebar";
 import { entourage } from "../../data";
 
-const offset = 3;
+const offset = 5;
 const slideWidth = 400;
 const transitionDuration = 300;
 const slides = entourage;
@@ -56,15 +56,7 @@ const Carousel = () => {
 	const handleClick = (index: number) => {
 		if (isTransitioning) return;
 		setIsTransitioning(true);
-
-		// Adjust for clicking on a duplicated first/last slide
-		if (index < offset) {
-			setCurrentIndex(slides.length + index); // Jump to real last slide if clicked on duplicated first slide
-		} else if (index >= totalSlides.length - offset) {
-			setCurrentIndex(index - slides.length); // Jump to real first slide if clicked on duplicated last slide
-		} else {
-			setCurrentIndex(index); // Regular slide click
-		}
+		setCurrentIndex(index); // Regular slide click
 	};
 
 	// Keyboard navigation using arrow keys
@@ -85,15 +77,17 @@ const Carousel = () => {
 
 	// After every transition, check if we need to reset the currentIndex to create the looping effect
 	useEffect(() => {
-		if (currentIndex === offset - 1) {
+		if (currentIndex <= offset - 1) {
 			setTimeout(() => {
 				setIsTransitioning(false);
-				setCurrentIndex(totalSlides.length - offset - 1); // Jump to end slide
+				const diff = offset - currentIndex - 1; // idk how but this works
+				setCurrentIndex(totalSlides.length - 1 - offset - diff); // Jump to end slide
 			}, transitionDuration); // Delay to allow the transition to complete
-		} else if (currentIndex === totalSlides.length - offset) {
+		} else if (currentIndex >= totalSlides.length - offset) {
 			setTimeout(() => {
 				setIsTransitioning(false);
-				setCurrentIndex(offset); // Jump to starting slide
+				const diff = (currentIndex - (slides.length + offset)); // idk how again, also works
+				setCurrentIndex(offset + diff); // Jump to starting slide
 			}, transitionDuration);
 		} else {
 			setTimeout(() => setIsTransitioning(false), transitionDuration);
