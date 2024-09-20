@@ -147,7 +147,7 @@ const Carousel = () => {
 					}`}
 				>
 					{/* Header (Name of the person) */}
-					<h2 className="uppercase text-secondary font-oswald font-medium text-[32px] tracking-wide text-center">{slide.name}</h2>
+					<h2 className="uppercase text-secondary font-oswald font-medium w-72 md:w-full text-[32px] tracking-wide text-center">{slide.name}</h2>
 
 					{/* Profile Image (Rounded) */}
 					<img
