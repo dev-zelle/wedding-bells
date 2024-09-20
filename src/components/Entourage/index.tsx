@@ -111,7 +111,7 @@ const Carousel = () => {
 	}, []);
 
 	return (
-		<div id="entourage" className="w-full py-40 flex flex-col gap-20">
+		<div id="entourage" className="w-full lg:pt-20 lg:pb-10 py-10 pb-5  flex flex-col gap-20">
 		<div className="flex justify-center">
 			<div className="flex flex-col gap-4 px-5">
 			<Titlebar title="Entourage" />
