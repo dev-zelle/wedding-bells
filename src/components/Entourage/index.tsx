@@ -157,7 +157,7 @@ const Carousel = () => {
 
 					{/* Profile Image (Rounded) */}
 					<img
-						className="w-64 h-64 rounded-full mt-4 border-4 border-white shadow-lg cursor-pointer object-cover"
+						className="w-64 h-64 rounded-full mt-4 border-4 border-white shadow-lg cursor-pointer object-cover object-top"
 						src={slide.image}
 						alt={slide.name}
 						onClick={() => handleClick(index)}
