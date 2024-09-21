@@ -9,7 +9,7 @@ const RSVP = () => {
 				</span>
 				<div className="font-sans italic text-lg max-w-[700px] text-black leading-10">					
                     Kindly send your response to Ms. Juvy Roilo at <b>0917 123 0219</b>.
-					<p>The favor of your response is requested.</p>
+					<p>The favor of your response is requested before October 31.</p>
 				</div>
 				<div className="flex items-center justify-center">
 					<button 
