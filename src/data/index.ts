@@ -24,6 +24,7 @@ import kimberly_chan from "../assets/images/entourage/kimberly_chan.jpg";
 import leonardo_clapis from "../assets/images/entourage/leonardo_clapis.jpeg";
 import marielle_vergara from "../assets/images/entourage/marielle_vergara.jpeg";
 import patrick_tan from "../assets/images/entourage/patrick_tan.jpeg";
+import lanz_clapis from "../assets/images/entourage/lanz_clapis.jpeg";
 
 export const navItems = [
   { id: 0, title: "Home", path: "#home" },
@@ -73,15 +74,15 @@ export const team = [
 
 export const entourage = [
   { role: "Best Man", name: "Kent Carlo L. Chan", image: kent_chan },
-  { role: "Maid of Honor", name: "Lanz Laxi Liane S. Clapis", image: "" },
-  { role: "Groomsman", name: "Jorge Frederick W. Lim",  image: jorge_lim },
-  { role: "Groomsman", name: "Patrick M. Tan",  image: patrick_tan },
-  { role: "Groomsman", name: "Dr. Leonardo Luigi S. Clapis",  image: leonardo_clapis },
-  { role: "Groomsman", name: "Dr. Alexis Leo B. Clapis",  image: alexis_clapis },
+  { role: "Maid of Honor", name: "Lanz Laxi Liane S. Clapis", image: lanz_clapis, },
   { role: "Bridesmaid", name: "Kimbery Rose L. Chan", image: kimberly_chan},
   { role: "Bridesmaid", name: "Dr. Marielle Anne Elouise L. Vergara", image: marielle_vergara },
   { role: "Bridesmaid", name: "Dr. Evalaine Mae A. Abecia", image: evalaine_abecia },
   { role: "Bridesmaid", name: "Dr. Dyan G. Sicat", image: dyan_sicat },
+  { role: "Groomsman", name: "Jorge Frederick W. Lim",  image: jorge_lim },
+  { role: "Groomsman", name: "Patrick M. Tan",  image: patrick_tan },
+  { role: "Groomsman", name: "Dr. Leonardo Luigi S. Clapis",  image: leonardo_clapis },
+  { role: "Groomsman", name: "Dr. Alexis Leo B. Clapis",  image: alexis_clapis },
 ];
 
 export const attire = [{ image: a1 }];
