@@ -15,7 +15,7 @@ import b1 from "../assets/images/b1.jpg";
 import b2 from "../assets/images/b2.jpg";
 import a1 from "../assets/images/a1.png";
 
-import alexis_clapis from "../assets/images/entourage/alexis_clapis.jpeg";
+import hubert_alegro from "../assets/images/entourage/hubert_alegro.jpg";
 import dyan_sicat from "../assets/images/entourage/dyan_sicat.jpeg";
 import evalaine_abecia from "../assets/images/entourage/evalaine_abecia.jpeg";
 import jorge_lim from "../assets/images/entourage/jorge_lim.jpg";
@@ -82,7 +82,7 @@ export const entourage = [
   { role: "Groomsman", name: "Jorge Frederick W. Lim",  image: jorge_lim },
   { role: "Groomsman", name: "Patrick M. Tan",  image: patrick_tan },
   { role: "Groomsman", name: "Dr. Leonardo Luigi S. Clapis",  image: leonardo_clapis },
-  { role: "Groomsman", name: "Dr. Alexis Leo B. Clapis",  image: alexis_clapis },
+  { role: "Groomsman", name: "Dr Hubert Jonathan Alegro",  image: hubert_alegro },
 ];
 
 export const attire = [{ image: a1 }];
